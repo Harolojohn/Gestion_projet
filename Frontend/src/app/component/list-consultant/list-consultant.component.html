@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Liste des projets</h1>
+  <table class="table">
+    <thead class="thead-light">
+    <tr>
+      <th>Nom du consultant</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let cons of consultant">
+    <tr>
+      <td>{{cons.nom}}</td>
+      <td>{{cons.email}}</td>
+      <td>{{cons.role}}</td>
+      <td>
+        <a class="btn btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
+        <button class="btn btn-danger m-1" ><i class="bi bi-trash-fill"></i></button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

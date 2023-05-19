@@ -1,0 +1,61 @@
+
+
+<main id="main" class="main">
+
+  <div class="pagetitle">
+    <h1>Tableau de bord</h1>
+  </div><!-- End Page Title -->
+
+  <section class="section dashboard" *ngIf="currentUser.content.role =='administrator' ">
+    <div class="row">
+      <div class="col-sm-6 mt-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title">Ajouter un projet</h5>
+            <p class="card-text">pour ajouter un projet clique sur Ajouter</p>
+            <a  href="addProject" class="btn btn-primary">Ajouter </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ajouter un consultant</h5>
+            <p class="card-text">pour ajouter un consultant clique sur Ajouter</p>
+            <a href="addConsultant" class="btn btn-primary">Ajouter </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">liste de  tous les projet</h5>
+            <a href="listProjet" class="btn btn-primary">Gere le projet</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">liste de tous les consultant</h5>
+            <a href="listConsultant" class="btn btn-primary">Gere le consultant</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-sm-6 mt-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title">Voir la liste du projet</h5>
+            <a  href="listProjet" class="btn btn-primary">gere le projet</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main><!-- End #main -->

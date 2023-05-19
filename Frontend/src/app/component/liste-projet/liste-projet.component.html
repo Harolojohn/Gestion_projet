@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Liste des projets</h1>
+  <table class="table">
+    <thead class="thead-light">
+    <tr>
+      <th>Nom du projet</th>
+      <th>Budget</th>
+      <th>Taux horaire</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody *ngFor=" let projet of projects">
+    <tr>
+      <!--<td>{{projet.name}}</td>-->
+      <td>{{projet.nom_projet}}</td>
+      <td>{{projet.budget}}</td>
+      <td>{{projet.taux_horaire}}</td>
+      <td>
+        <button class="btn btn-warning" (click)="navigateToComponent(projet.id)"><i class="bi bi-pencil-square"></i></button>
+        <button class="btn btn-danger m-1" (click)="delete(projet.id || '')"><i class="bi bi-trash-fill"></i></button>
+        <button class="btn btn-primary m-1" (click)="navigateToTime(projet.id)" ><i class="bi bi-clock"></i></button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

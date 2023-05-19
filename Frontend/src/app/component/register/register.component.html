@@ -1,0 +1,20 @@
+<div class="form-container">
+  <h1>Inscription d'utilisateur</h1>
+  <form id="signup-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" formControlName="nom" name="nom" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" formControlName="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" formControlName="password" name="password" required>
+    </div>
+    <button type="submit" [disabled]="userForm.invalid">Créer</button>
+  </form>
+  <p id="result-message"></p>
+  <p>Retour à la <a href="login">page de connexion</a></p>
+</div>
