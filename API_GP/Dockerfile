@@ -11,6 +11,7 @@ ARG JAR_FILE=target/Api_GP-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 COPY ${JAR_FILE} api-gp.jar
 # Run the jar file 
-CMD ["java", "-jar", "api-gp.jar" ,"--spring.config.location=file:/api-gp/config/application.properties" ]
+#CMD ["java", "-jar", "api-gp.jar" ,"--spring.config.location=file:/api-gp/config/application.properties" ]
+CMD ["java", "-jar", "api-gp.jar"]
 
 
